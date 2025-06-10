@@ -1,0 +1,61 @@
+@import url("../../../animations.css");
+
+.menuDesktop {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .menuDesktop {
+    position: relative;
+    z-index: 999;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menuDesktop ul {
+    background-color: var(--amarelo);
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    gap: 1rem;
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  .menuDesktop ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+
+  .menuDesktop ul li img,
+  .menuDesktop ul li video {
+    width: 100%;
+    max-width: 250px;
+    position: relative;
+    z-index: 999;
+  }
+
+  .botaoMenu {
+    background: none;
+    color: var(--roxo);
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 250px;
+    border: none;
+    transition: ease-in-out 0.3s;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .botaoMenu:hover {
+    transform: scale(1.1);
+  }
+}

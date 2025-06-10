@@ -1,0 +1,102 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--amarelo);
+  gap: 2rem;
+  padding: 2rem;
+  color: var(--roxo);
+  font-family: "Quicksand", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+footer ul {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  list-style: none;
+  gap: 0.8rem;
+}
+
+footer ul h3 {
+  font-weight: 700;
+  color: var(--roxo);
+}
+
+footer ul a {
+  text-decoration: none;
+  color: var(--roxo);
+  font-weight: 600;
+  transition: ease-in-out 0.2s;
+}
+
+footer ul a:hover {
+  color: white;
+}
+
+footer .redes-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+footer .redes-container .redes {
+  font-size: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+footer .marca-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer img {
+  width: 50%;
+}
+
+footer img:nth-last-child(1) {
+  height: 80px;
+  width: 60px;
+}
+
+.redes a {
+  text-decoration: none;
+  color: var(--roxo);
+}
+
+.redes a:hover {
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  footer {
+    padding: 4rem;
+    position: relative;
+  }
+
+  footer .marca-lacrei {
+    width: 15%;
+    position: absolute;
+    top: 30%;
+  }
+}
+
+@media (min-width: 1280px) {
+  footer ul {
+    font-size: 1.5rem;
+  }
+}

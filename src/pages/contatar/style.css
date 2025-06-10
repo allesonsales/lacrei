@@ -1,0 +1,101 @@
+@import url("../../animations.css");
+
+#contatar {
+  background-color: var(--roxo);
+  padding: 0;
+}
+
+.contatar-container {
+  padding: 2rem;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  max-width: 100%;
+}
+
+.contatar-container button {
+  background-color: var(--amarelo);
+  border: none;
+  padding: 1rem;
+  border-radius: 15px;
+  color: var(--roxo);
+  font-family: "Modak", sans-serif;
+  font-size: 3rem;
+  line-height: 50px;
+  margin-bottom: 2rem;
+  transition: ease-in-out 0.2s;
+}
+
+.contatar-container button:hover {
+  background-color: var(--rosa);
+  cursor: pointer;
+  color: white;
+}
+
+.animar-botao {
+  animation: sobeDesce 1.5s ease-in-out forwards;
+}
+
+.animar-coracao {
+  animation: coracao 0.6s infinite;
+  transition: transform 0.2s;
+  width: 70vw;
+}
+
+.coracao-menores {
+  width: 30px;
+  animation: fadeOut 5s infinite ease-out;
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.coracao-menores img {
+  width: 100%;
+  animation: subir 4s infinite ease-out;
+}
+
+.coracao-menores img:nth-child(2) {
+  animation: subir 2s infinite ease-out;
+  transform: translateX(200%);
+  animation-delay: 2s;
+  --posx: 200%;
+}
+
+.coracao-menores img:nth-child(3) {
+  animation: subir 2s infinite ease-out;
+  --posx: 150%;
+  animation-delay: 2s;
+}
+
+@media (min-width: 1024px) {
+  .contatar-container {
+    padding: 4rem;
+  }
+
+  #contatar .titulo {
+    font-size: 5rem;
+    margin-top: 2rem;
+  }
+
+  .apoiar-fotos {
+    position: relative;
+  }
+
+  .coracao-menores {
+    position: absolute;
+  }
+
+  .animar-coracao {
+    width: 50vw;
+  }
+}
+
+@media (min-width: 1280px) {
+  .animar-coracao {
+    width: 30vw;
+  }
+}

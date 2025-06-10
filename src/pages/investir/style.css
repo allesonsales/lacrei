@@ -1,0 +1,115 @@
+@import url("../../animations.css");
+
+#investir {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--verde);
+}
+
+#investir .conteudo-container {
+  padding: 2rem;
+}
+
+#investir .conteudo-container ul {
+  display: grid;
+  width: 100%;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+
+#investir .conteudo-container ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  font-size: 0.8rem;
+}
+
+.borda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  border: solid 2px white;
+  padding: 0.8rem;
+  border-radius: 15px;
+  position: relative;
+  height: 350px;
+  transform: scale(0.8);
+  opacity: 0;
+}
+
+.conteudo-container .icone {
+  opacity: 0;
+}
+
+.animar-investir {
+  animation: animar-borda 2s ease forwards;
+  animation-delay: var(--delay, 0s);
+}
+
+#investir .conteudo-container ul li i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  position: relative;
+  width: 3.5rem;
+  height: 3.5rem;
+  border: solid 2px white;
+  background-color: var(--verde);
+  border-radius: 50%;
+}
+
+#investir .conteudo-container ul li h2 {
+  line-height: 20px;
+}
+
+@media (min-width: 1024px) {
+  #investir .titulo {
+    width: 60%;
+  }
+
+  #investir .conteudo-container {
+    padding: 4rem;
+  }
+
+  #investir .conteudo-container ul {
+    gap: 3rem;
+  }
+
+  #investir .conteudo-container ul li {
+    font-size: 1.2rem;
+  }
+
+  .borda {
+    border: solid 5px;
+  }
+
+  #investir .conteudo-container ul li h2 {
+    font-size: 2rem;
+    line-height: 35px;
+  }
+
+  #investir .conteudo-container ul li i {
+    font-size: 5rem;
+    height: 8rem;
+    width: 8rem;
+    border: solid 5px;
+  }
+}
+
+@media (min-width: 1280px) {
+  #investir .conteudo-container ul li {
+    font-size: 1.5rem;
+  }
+
+  #investir .conteudo-container {
+    padding: 10rem;
+  }
+}

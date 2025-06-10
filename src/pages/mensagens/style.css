@@ -1,0 +1,57 @@
+#mensagens {
+  height: 100vh;
+  position: relative;
+}
+
+.mensagem-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mensagens .titulo {
+  font-size: 2rem;
+  line-height: 35px;
+  z-index: 15;
+  position: absolute;
+  padding: 2rem;
+  top: 0;
+  color: var(--amarelo);
+  text-align: center;
+  left: 0;
+  width: 100%;
+}
+
+.imagem-after {
+  background-color: var(--roxo);
+  mix-blend-mode: multiply;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 10;
+}
+
+#mensagens img {
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media (min-width: 1024px) {
+  #mensagens .titulo {
+    text-align: center;
+    font-size: 5rem;
+    line-height: 55px;
+    bottom: 0;
+    top: auto;
+  }
+}

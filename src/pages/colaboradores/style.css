@@ -1,0 +1,165 @@
+@import url("../../animations.css");
+
+#colaboradores {
+  background-color: var(--rosa);
+  position: relative;
+}
+
+#colaboradores::after {
+  content: "";
+  background-image: url("/home/girassol.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+  left: -350px;
+  bottom: -250px;
+  position: absolute;
+  opacity: 0.2;
+  animation: girar 15s linear infinite;
+  z-index: 3;
+}
+
+#colaboradores .titulo {
+  color: var(--amarelo);
+}
+
+.vantagem-container {
+  text-align: center;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  margin-top: 1rem;
+  max-width: 100%;
+}
+
+.vantagem-container h2 {
+  text-transform: uppercase;
+  line-height: 45px;
+  font-size: 2rem;
+}
+
+.vantagem-container ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.vantagem-container ul li img {
+  width: 70vw;
+}
+
+.vantagem-container ul li span {
+  font-size: 1.5rem;
+  line-height: 35px;
+  padding: 0 2rem;
+}
+
+.vantagem {
+  opacity: 0;
+  text-align: center;
+  max-width: 100%;
+}
+
+.parceiros {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 10;
+  margin-top: 2rem;
+}
+
+.parceiros h2 {
+  margin-top: 4rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.parceiros ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+
+.parceiros span {
+  line-height: 15px;
+  margin-top: 0.5rem;
+}
+
+.parceiros ul img {
+  width: 100%;
+}
+
+.fade-in {
+  animation: fadeIn 1.5s forwards;
+}
+
+.fade-out {
+  animation: fadeOut 1.5s forwards;
+}
+
+@media (min-width: 1024px) {
+  #colaboradores {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .vantagem-container ul li {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .vantagem-container ul li span {
+    font-size: 3rem;
+    width: 30%;
+    text-align: left;
+  }
+
+  .vantagem-container ul li img {
+    width: 30vw;
+  }
+
+  .parceiros ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .parceiros ul img {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .vantagem-container ul li img {
+    width: 15vw;
+  }
+
+  #colaboradores .titulo {
+    width: 40%;
+    margin-bottom: 4rem;
+  }
+  .parceiros ul img {
+    width: 50%;
+  }
+
+  #colaboradores::after {
+    width: 700px;
+    height: 700px;
+    left: -350px;
+  }
+}

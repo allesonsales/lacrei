@@ -1,0 +1,137 @@
+@import url("../../animations.css");
+
+#apae {
+  background-color: var(--amarelo);
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#apae .marca-apae {
+  width: 50px;
+}
+
+#apae .marca-apae img {
+  width: 100%;
+}
+
+#apae .titulo {
+  color: var(--roxo);
+}
+
+#apae .conteudo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#apae .conteudo-container .conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 0.8rem;
+}
+
+#apae .conteudo-container .conteudo p {
+  line-height: 20px;
+  font-size: 1rem;
+  color: var(--roxo);
+}
+
+#apae .conteudo-container .conteudo ul {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  width: 100%;
+  font-size: 0.8rem;
+  list-style: none;
+  padding: 2rem;
+  border-radius: 25px;
+  background-color: var(--roxo);
+  position: relative;
+}
+
+#apae .conteudo-container .conteudo ul::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-image: url("../../../public/apae/list-disc.svg");
+  position: absolute;
+  top: -10px;
+  left: -15px;
+}
+
+#apae .conteudo-container .conteudo ul::before {
+  content: "";
+  width: 80px;
+  height: 80px;
+  background-image: url("../../../public/apae/girassol.png");
+  background-size: contain;
+  position: absolute;
+  bottom: -40px;
+  right: -25px;
+  animation: girar 8s linear infinite;
+}
+
+#apae .conteudo-container .conteudo ul li {
+  text-align: center;
+}
+
+#apae .conteudo-container .conteudo ul li b {
+  color: var(--amarelo);
+  font-weight: 800;
+  vertical-align: middle;
+}
+
+.animar-quem-somos {
+  animation: fadeIn 1.5s forwards;
+}
+
+@media (min-width: 1024px) {
+  #apae {
+    flex-direction: column-reverse;
+    gap: 5rem;
+  }
+
+  #apae .conteudo-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  #apae .conteudo-container .conteudo ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #apae .conteudo-container .conteudo p {
+    font-size: 1.5rem;
+    line-height: 35px;
+  }
+
+  #apae .conteudo-container .conteudo ul li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  #apae .conteudo-container .conteudo ul {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 1rem;
+  }
+
+  #apae .conteudo-container .conteudo ul li {
+    font-size: 1.2rem;
+  }
+
+  #apae .conteudo-container .conteudo p {
+    width: 80%;
+    align-self: center;
+    margin-top: 1rem;
+  }
+}
