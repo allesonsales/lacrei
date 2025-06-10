@@ -31,7 +31,7 @@ function Home() {
         <div className="lacre"></div>
         <div className="girassol"></div>
         <div className="logo">
-          <img src="/marcalacrei.png" alt="Projeto Lacrei" />
+          <img src="/lacrei/marcalacrei.png" alt="Projeto Lacrei" />
         </div>
         <div className="criancas">
           <img src="/public/home/criancas.png" alt="" />
