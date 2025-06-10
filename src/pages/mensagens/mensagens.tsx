@@ -7,39 +7,39 @@ function Mensagens() {
   const mensagens = [
     {
       mensagem: "Um lacre pode parecer pouco. Milhares deles mudam uma vida.",
-      foto: "/mensagem/1.jpg",
+      foto: "/lacrei/mensagem/1.jpg",
     },
     {
       mensagem: "Juntar lacres é simples. O impacto, imenso.",
-      foto: "/mensagem/2.jpg",
+      foto: "/lacrei/mensagem/2.jpg",
     },
     {
       mensagem: "Pequenos gestos constroem grandes mudanças.",
-      foto: "/mensagem/3.jpg",
+      foto: "/lacrei/mensagem/3.jpg",
     },
     {
       mensagem: "Um simples lacre pode virar liberdade sobre rodas.",
-      foto: "/mensagem/4.jpg",
+      foto: "/lacrei/mensagem/4.jpg",
     },
     {
       mensagem: "Solidariedade cabe na ponta de um dedo.",
-      foto: "/mensagem/5.jpg",
+      foto: "/lacrei/mensagem/5.jpg",
     },
     {
       mensagem: "Cada lacre é um passo rumo à inclusão.",
-      foto: "/mensagem/6.jpg",
+      foto: "/lacrei/mensagem/6.jpg",
     },
     {
       mensagem: "Você doa um lacre. Alguém ganha mobilidade.",
-      foto: "/mensagem/7.jpg",
+      foto: "/lacrei/mensagem/7.jpg",
     },
     {
       mensagem: "Milhares de lacres. Uma nova chance.",
-      foto: "/mensagem/8.jpg",
+      foto: "/lacrei/mensagem/8.jpg",
     },
     {
       mensagem: "O que você descartaria pode transformar uma vida.",
-      foto: "/mensagem/9.jpg",
+      foto: "/lacrei/mensagem/9.jpg",
     },
     { mensagem: "Doar lacres é doar esperança.", foto: "/mensagem/10.jpg" },
   ];

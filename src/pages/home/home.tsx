@@ -34,7 +34,7 @@ function Home() {
           <img src="/lacrei/marcalacrei.png" alt="Projeto Lacrei" />
         </div>
         <div className="criancas">
-          <img src="/public/home/criancas.png" alt="" />
+          <img src="/lacrei/home/criancas.png" alt="" />
         </div>
         {!celular && <MenuDesktop />}
       </div>

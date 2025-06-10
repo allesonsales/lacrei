@@ -8,47 +8,31 @@ function Colaboradores() {
 
   const vantagens = [
     {
-      imagens: "/colaboradores/marca-revista.png",
+      imagens: "/lacrei/colaboradores/marca-revista.png",
       descricao: "Exposição da marca na revista",
     },
     {
-      imagens: "/colaboradores/marca-caixa.png",
+      imagens: "/lacrei/colaboradores/marca-caixa.png",
       descricao: "Exposição da marca na caixa recolhedora",
     },
     {
-      imagens: "/colaboradores/marca-site.png",
+      imagens: "/lacrei/colaboradores/marca-site.png",
       descricao: "Exposição da marca no site da instituição",
     },
     {
-      imagens: "/colaboradores/marca-selo.png",
+      imagens: "/lacrei/colaboradores/marca-selo.png",
       descricao: "Selô social da instituição",
     },
   ];
 
   const parceiros = [
     {
-      imagem: "/colaboradores/marca/pref.png",
-      nome: "Prefeitura de Cotia",
+      imagem: "/lacrei/colaboradores/marca/pref.png",
+      nome: "Prefeitura de Cotia - Sec. Educação, Sec. Verde e Meio Ambiente",
     },
     {
-      imagem: "/colaboradores/marca/pref.png",
-      nome: "Prefeitura de Cotia",
-    },
-    {
-      imagem: "/colaboradores/marca/pref.png",
-      nome: "Prefeitura de Cotia",
-    },
-    {
-      imagem: "/colaboradores/marca/pref.png",
-      nome: "Prefeitura de Cotia",
-    },
-    {
-      imagem: "/colaboradores/marca/pref.png",
-      nome: "Prefeitura de Cotia",
-    },
-    {
-      imagem: "/colaboradores/marca/pref.png",
-      nome: "Prefeitura de Cotia",
+      imagem: "/lacrei/colaboradores/marca/pref-vgp.png",
+      nome: "Prefeitura de Vargem Grande Paulista - Sec. Educação",
     },
   ];
 

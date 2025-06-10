@@ -26,7 +26,7 @@ function Apae() {
   return (
     <section id="apae" ref={ref}>
       <div className="marca-apae">
-        <img src="/marca-apae-positivo.png" alt="APAE Cotia" />
+        <img src="/lacrei/marca-apae-positivo.png" alt="APAE Cotia" />
       </div>
       <div
         className={
