@@ -1,6 +1,6 @@
 # Projeto Lacrei
 
-![](../lacrei/public/marcalacrei.png)
+![](public/marcalacrei.png)
 
 ### O Projeto Lacrei é um projeto desenvolvido pela APAE (Associação de Pais e Amigos dos Excepcionais) sem fins lucrativos onde o principal objetivo do projeto é transformar Lacres em acessibilidade para
 
