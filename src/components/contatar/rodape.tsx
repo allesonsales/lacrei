@@ -27,7 +27,7 @@ function Rodape() {
   return (
     <footer ref={ref} className={estaNoRodape ? "animar-rodape" : ""}>
       <img
-        src="/marcalacrei.png"
+        src="/lacrei/marcalacrei.png"
         alt="Projeto Lacrei"
         className="marca-lacrei"
       />
@@ -67,7 +67,7 @@ function Rodape() {
               <i className="fa-brands fa-whatsapp"></i>
             </a>
           </div>
-          <img src="/marca-apae.png" alt="" />
+          <img src="/lacrei/marca-apae.png" alt="" />
         </div>
       </div>
       <div className="marca-container">Projeto Lacrei - {ano}</div>
