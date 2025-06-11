@@ -10,8 +10,8 @@ function MenuMobile() {
 
   return (
     <nav className="menuMobile">
-      <img src="/marca-apae-positivo.png" />
-      <img src="/marcalacrei.png" />
+      <img src="/lacrei/marca-apae-positivo.png" />
+      <img src="/lacrei/marcalacrei.png" />
       <div className="menuMobile-container">
         <button onClick={toggleMenu}>
           {menuAberto ? (
